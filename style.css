@@ -1,0 +1,591 @@
+@font-face {
+    font-family: centra;
+    src: url('./Fonts.ttf');
+    font-weight: 400;
+}
+
+/* --- HERO SECTION CSS ---*/
+
+.navbar {
+    position: fixed;
+}
+
+.navbar-brand img {
+    width: 200px;
+    margin-left: 30px;
+}
+
+
+#heroSection {
+    background-image: url("images/HeroSection.png");
+    background-size: cover;
+    /* background-position: center; */
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    #heroSection {
+        background-image: url("images/HeroSection_Mobile.png");
+        /* height: 100%; */
+        /* background-size: auto; */
+    }
+    .homeScreenBtn{
+        font-size: 20px !important;
+    }
+}
+
+.heroContainer {
+    position: absolute;
+    top: 30%;
+}
+
+.eventName {
+    font-size: clamp(2rem, 5vw + 2rem, 5rem);
+    font-weight: 1000;
+    letter-spacing: 4px;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+}
+
+.subHeading {
+    font-size: clamp(0.3rem, 2vw + 0.5rem, 1.5rem);
+    font-family: "Baskervville SC", serif;
+    font-weight: 500;
+    color: #fdfdfe;
+}
+
+#heroSection button {
+    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+    color: white;
+    font-size: 28px;
+    font-family: serif;
+    font-weight: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+#heroSection button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 15px 17px 39px rgba(1, 13, 59, 0.3);
+}
+
+
+/* --- MAIN BODY CSS ---*/
+
+.mainBody {
+    width: 80%;
+    margin: auto;
+    animation: slideInUp;
+    animation-duration: 2s;
+    /* border: 1px solid black; */
+}
+
+/* --- BACKGROUNDS CSS ---*/
+
+body {
+    --s: 84px;
+    /* control the size*/
+    --c1: #f2f2f2;
+    --c2: #ded9db;
+    --c3: #d1d1d1;
+
+    --_g: 0 120deg, #0000 0;
+    background:
+        conic-gradient(from 0deg at calc(500%/6) calc(100%/3), var(--c3) var(--_g)),
+        conic-gradient(from -120deg at calc(100%/6) calc(100%/3), var(--c2) var(--_g)),
+        conic-gradient(from 120deg at calc(100%/3) calc(500%/6), var(--c1) var(--_g)),
+        conic-gradient(from 120deg at calc(200%/3) calc(500%/6), var(--c1) var(--_g)),
+        conic-gradient(from -180deg at calc(100%/3) 50%, var(--c2) 60deg, var(--c1) var(--_g)),
+        conic-gradient(from 60deg at calc(200%/3) 50%, var(--c1) 60deg, var(--c3) var(--_g)),
+        conic-gradient(from -60deg at 50% calc(100%/3), var(--c1) 120deg, var(--c2) 0 240deg, var(--c3) 0);
+    background-size: calc(var(--s)*1.732) var(--s);
+}
+
+
+/* --- ABOUT SECTION CSS ---*/
+
+#aboutUs p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    width: 50%;
+    padding: 20px;
+}
+
+.about-bg {
+    background-color: rgba(255, 255, 255, 0.884);
+}
+
+.about-bg:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+/* --- -------- FAQs SECTION CSS ------- ----*/
+
+.FaqImg {
+    width: 350px;
+    /* height: 55vh; */
+    box-shadow: 15px 17px 39px rgba(1, 13, 59, 0.3);
+    border-radius: 10px;
+}
+
+.accordion-button {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(3, 22, 79);
+    font-weight: bold;
+}
+
+.accordion-body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(3, 22, 79);
+    font-weight: bold;
+}
+
+
+/* --- --------- OVERLAYING DIV CSS --------- ---*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(166, 163, 163, 0.539);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay::before {
+    content: "Get ready for the big reveal—amazing prizes are just around the corner and coming soon!";
+    font-size: 3rem;
+    font-weight: bold;
+    margin: auto;
+}
+
+
+/* --- --------- HEADING CSS --------- ---*/
+
+.heading-one h1 {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    background: linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 13px;
+
+}
+
+.heading-one h1::before {
+    background: linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+    content: '';
+    display: block;
+    height: 5px;
+    width: 75px;
+    margin-bottom: 5px;
+}
+
+.heading-one h1::after {
+    background: linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    width: 75px;
+    margin-bottom: 0.25em;
+}
+
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.heading-two h1 {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-bottom: 5px;
+    background: linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-two h1:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background: linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+}
+
+.heading-two h1:after {
+    width: 100px;
+    height: 2px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background: linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+}
+
+/* --- COMING SOON DIVs --- */
+.comingSoon p {
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: Geneva, Tahoma, sans-serif;
+    background: url("images\\ComingSoonHeading.png");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.comingSoon {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 15px 17px 80px rgba(1, 13, 59, 0.3);
+}
+
+@media only screen and (max-width: 992px) {
+    .hide-on-small-screens {
+        display: none !important;
+    }
+}
+
+
+/* --- THEME SECTION ---*/
+
+#themes .card-body {
+    background: linear-gradient(178.6deg, rgb(232, 245, 253) 3.3%, rgb(252, 253, 255) 109.6%);
+    font-family: sans-serif;
+}
+
+#themes .card-title {
+    color: rgb(0, 32, 95);
+    font-weight: bolder;
+}
+
+#themes .card-text {
+    color: rgb(1, 28, 83);
+}
+
+#themes .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 15px 17px 39px rgba(1, 13, 59, 0.3);
+}
+
+
+/* --- TEAM SECTION ---*/
+
+#team .name {
+    color: rgb(0, 32, 95);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+}
+
+#team .position {
+    color: rgb(0, 32, 95);
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+#team .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+    box-shadow: 15px 17px 39px rgba(1, 13, 59, 0.3);
+}
+
+#team .card-group {
+    display: flex;
+    justify-content: center;
+}
+
+#team .card {
+    max-width: 300px;
+}
+
+.TeamDispLG,
+.TeamDispMD {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .TeamDispLG {
+        display: none;
+    }
+
+    .TeamDispMD {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .TeamDispMD {
+        display: none;
+    }
+
+    .TeamDispLG {
+        display: block;
+    }
+}
+
+
+/* --- SPONSORS AND PARTNERS --- */
+
+.frameSetSponsors {
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid black; */
+}
+
+.p-4Only {
+    height: 400px;
+}
+
+
+.prizesIframe {
+    height: 650px;
+}
+
+.card-body p {
+    font-family: centra;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.head1 {
+    position: relative;
+    right: +150px;
+}
+
+/* --- BUTTONS CSS FOR THE MAIN BODY ---*/
+
+.commonButton {
+    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5%;
+    font-family: 'centra', sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.commonButton:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 15px 17px 39px rgba(1, 13, 59, 0.3);
+}
+
+
+/* --- TIMELINE AND EVENTS ---*/
+
+#timelineAndEvents .card-body p {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.timeline .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 15px 17px 39px rgba(1, 13, 59, 0.3);
+}
+
+/* --- FOOTER SECTION ---*/
+
+.Footer_Container {
+    position: relative;
+    padding: 50px 0px;
+    padding-top: 100px;
+    height: 100vh;
+    background: linear-gradient(109.6deg, rgb(15, 19, 24) 11.2%, rgb(7, 15, 25) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+@media (max-width: 992px){
+    .Footer_Container{
+        height: max-content;
+        padding-bottom: 200px ;
+    }
+}
+
+.ContactUsH1 {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: max-content;
+    margin: auto;
+    font-size: 6vw;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(225, 222, 222);
+    box-shadow: rgba(1, 56, 96, 0.206) 0px 25px 20px -20px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 0 50px;
+}
+
+.footer_Container {
+    width: 80%;
+    margin: auto;
+    backdrop-filter: invert(10%);
+    padding: 20px;
+    box-shadow: rgba(249, 248, 248, 0.07) 0px 1px 2px, rgba(249, 248, 248, 0.07) 0px 2px 4px, rgba(249, 248, 248, 0.07) 0px 4px 8px, rgba(249, 248, 248, 0.07) 0px 8px 16px, rgba(249, 248, 248, 0.07) 0px 16px 32px, rgba(249, 248, 248, 0.07) 0px 32px 64px;
+}
+
+@media screen and (max-width:992px) {
+    .footDispFlex {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.form_contact input,
+.form_contact textarea {
+    color: white;
+    background-color: rgba(11, 12, 19, 0.514);
+}
+
+.form_contact input::placeholder,
+.form_contact textarea::placeholder {
+    color: rgb(165, 165, 165);
+}
+
+.form_contact input:focus,
+.form_contact textarea:focus {
+    background-color: #d7e4f1;
+}
+
+
+.footer_form_button_Succes {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #0c09099a;
+    color: white;
+    transition: all 300ms ease;
+}
+
+.footer_form_button_Succes:hover {
+    font-size: 1.3em;
+    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+    transition: all 300ms ease;
+}
+
+/* --- WAVE SECTION ---*/
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
