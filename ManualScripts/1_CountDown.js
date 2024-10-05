@@ -30,7 +30,7 @@ function updateCountDown() {
 
 
   // Event Date to be added here
-  const HackDate = new Date(`October 14 2024 09:00:00`);
+  const HackDate = new Date(`October 09 2024 23:59:59`);
 
   const timeLeft = HackDate - currentTime;
   console.log(timeLeft);
