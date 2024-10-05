@@ -38,6 +38,11 @@
     }
 }
 
+.homeScreenBtn a{
+    text-decoration: none;
+    color: white;
+}
+
 .heroContainer {
     position: absolute;
     top: 30%;
