@@ -37,6 +37,10 @@ img {
     background-color: white;
 }
 
+.slide-track:hover img{
+    animation-play-state: paused;
+}
+
 .slide-track {
     width: calc(26*250px);
     display: flex;
