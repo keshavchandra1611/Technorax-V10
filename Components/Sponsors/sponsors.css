@@ -59,6 +59,6 @@ img {
 
     100% {
         /* transform: translatex(-1000%) */
-        transform: translateX(calc(-250px * 11));
+        transform: translateX(calc(-250px * 12));
     }
 }

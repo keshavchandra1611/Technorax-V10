@@ -13,12 +13,22 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+	<!-- LinkedIn Logo in judges section -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Axios -->
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Include Axios -->
+	<!-- Ajax -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 	<!-- Favicon -->
 	<link rel="icon" href="./images/Websitelogos/L2.png" type="image/png">
 
 	<!-- CountDown CSS -->
 	<link rel="stylesheet" href="./ManualCSS/1_CountDown.css" />
 	<link rel="stylesheet" href="./ManualCSS/2_BodyAnimation.css">
+
+	
 
 </head>
 
@@ -29,13 +39,14 @@
 	<div id="countDown" class="countDown">
 		<span class="up-downBall">▼</span>
 		<span class="cDspan1">
-			<button class="cDInner">Applications close in</button>
+			<button class="cDInner">Event starts in:</button>
 			<span class="countDownTime">
 				<button class="cDInnerSpan DayTime">Days</button>
 				<button class="cDInnerSpan HourTime">Hrs</button>
 				<button class="cDInnerSpan MinTime">Mins</button>
 				<button class="cDInnerSpan SecTime">Secs</button></span>
-				<a href="https://thacks-7.devfolio.co/overview" target="_blank"><button class="cDInner"> Apply Now</button></a>
+				<!-- <a href="https://thacks-7.devfolio.co/overview" target="_blank"><button class="cDInner">Get the Directions</button></a> -->
+				<a href="https://maps.app.goo.gl/NG53QdpDRm1CKRU86" target="_blank"><button class="cDInner">Get directions</button></a>
 		</span>
 	</div>
 	<!-- -------- COUNT DOWN ENDS ------- -->
@@ -415,40 +426,79 @@
 				<h1>JUDGES AND MENTORS</h1>
 			</div>
 			<div class="text-center mb-4 comingSoon">
-				<p>We're about to reveal the incredible judges and mentors who will guide you to victory, announcement
-					coming soon!</p>
+				<!-- <p>We're about to reveal the incredible judges and mentors who will guide you to victory, announcement
+					coming soon!</p> -->
+				<p>
+					Introducing our incredible judges and mentors, who will guide you on this journey to success!
+				</p>
 			</div>
 			<div class="d-flex flex-wrap justify-content-center" style="gap: 50px 100px">
-				<div class="card rounded-0" style="width: 18rem">
-					<img class="rounded-0" height="380px" src="images\DetailsComingSoon.png" class="card-img-top"
+
+				<!-- Praveen Chaudhary -->
+				<div class="card rounded-0" style="width: 19rem">
+					<img class="rounded-0" src="./images/Judges/PraveenPic.png" class="card-img-top"
 						alt="..." />
-					<!-- <div class="card-body bg">
-							<h5 class="card-title">Card title</h5>
+					<div class="card-body bg">
+							<h5 class="card-title">Praveen Chaudhary 
+								<a href="https://www.linkedin.com/in/chaudharypraveen98/" target="_blank">
+									<i class="fa fa-linkedin-square" style="font-size: 1.5rem"></i>
+								</a>
+							</h5>
 							<p class="card-text">
-                				Gear up, our awesome judges and mentors are about to drop in!
+                				An alumnus of GGSIPU, currently holds the position of SDE 2 at Sigmoid. With his advanced software development skills and industry experience, Praveen brings technical expertise to evaluate innovative projects and solutions in the competition.
 							</p>
-						</div> -->
+						</div>
 				</div>
-				<div class="hide-on-small-screens card rounded-0" style="width: 18rem">
-					<img class="rounded-0" height="380px" src="images\DetailsComingSoon.png" class="card-img-top"
+				<!-- Aakash Avashthi -->
+				<div class="card rounded-0" style="width: 19rem">
+					<img class="rounded-0" src="./images/Judges/Aakash.png" class="card-img-top"
 						alt="..." />
-					<!-- <div class="card-body">
-							<h5 class="card-title">Card title</h5>
+					<div class="card-body">
+							<h5 class="card-title">Aakash Avashthi
+								<a href="https://www.linkedin.com/in/aakashavashthi3073" target="_blank">
+									<i class="fa fa-linkedin-square" style="font-size: 1.5rem"></i>
+								</a>
+							</h5>
 							<p class="card-text">
-								Gear up, our awesome judges and mentors are about to drop in!
+								<!-- Consultant Services -->
+								An ADGIPS graduate, Aakash Avashthi brings his expertise as a Consultant at Deloitte to the judging panel. His background in strategic analysis and problem-solving positions him well to evaluate creative concepts and their real-world applicability in this competition.
 							</p>
-						</div> -->
+						</div>
 				</div>
-				<div class="hide-on-small-screens card rounded-0" style="width: 18rem">
-					<img class="rounded-0" height="380px" src="images\DetailsComingSoon.png" class="card-img-top"
+				<!-- Jatin Kurra-->
+				<div class="card rounded-0" style="width: 19rem">
+					<img class="rounded-0" src="./images/Judges/JatinPic.png" class="card-img-top"
 						alt="..." />
-					<!-- <div class="card-body">
-							<h5 class="card-title">Card title</h5>
+					<div class="card-body">
+							<h5 class="card-title">Jatin Kurra
+								<a href="https://www.linkedin.com/in/jatin-kurra2602?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+									<i class="fa fa-linkedin-square" style="font-size: 1.5rem"></i>
+								</a>
+							</h5>
 							<p class="card-text">
-								Gear up, our awesome judges and mentors are about to drop in!
+								<!-- Technical Analyst @ A&M Supplies Pvt Ltd -->
+								As a Technical Analyst at A&M Supplies Pvt Ltd and an ADGIPS'24 graduate, Jattin kurra embodies the bridge between academia and industry and brings a sharp analytical approach and deep industry expertise to the judging panel, ensuring a well-informed and insightful evaluation at the event.
 							</p>
-						</div> -->
+						</div>
 				</div>
+				<!-- Srishti Bansal -->
+				<div class="card rounded-0" style="width: 19rem">
+					<img class="rounded-0" ` src="./images/Judges/Srishti.png" class="card-img-top"
+						alt="..." />
+					<div class="card-body">
+							<h5 class="card-title">Srishti Bansal
+								<a href="https://www.linkedin.com/in/srishti-bansal-706457191/" target="_blank">
+									<i class="fa fa-linkedin-square" style="font-size: 1.5rem"></i>
+								</a>
+							</h5>
+							<p class="card-text">
+								<!-- Supply Chain and Strategy Head -->
+								An IIT BHU '23 graduate, currently serves as the Supply Chain and Strategy Head. With her expertise in logistics and strategic planning, she brings valuable insights to evaluate innovative solutions in the field.
+							</p>
+					</div>
+
+				</div>
+				
 			</div>
 		</section>
 		<!-- --------- JUDGES SECTION ENDS -------- -->
@@ -1020,7 +1070,7 @@
 									data-bs-parent="#accordionExample">
 									<div class="accordion-body">
 										Registration is to be done through the link given here: <a
-											href="https://thacks-6.devfolio.co/"><strong>https://thacks-6.devfolio.co/</strong></a>
+											href="https://thacks-6.devfolio.co/" target="_blank"><strong>https://thacks-7.devfolio.co/overview</strong></a>
 									</div>
 								</div>
 							</div>
@@ -1035,7 +1085,7 @@
 									data-bs-parent="#accordionExample">
 									<div class="accordion-body">
 										You can check the code of conduct on this link given here: <a
-											href="https://devfolio.co/code-of-conduct"><strong>https://devfolio.co/code-of-conduct</strong></a>
+											href="https://devfolio.co/code-of-conduct" target="_blank"><strong>https://devfolio.co/code-of-conduct</strong></a>
 									</div>
 								</div>
 							</div>
@@ -1063,26 +1113,30 @@
 							<div class="text-center mb-3">
 								<h1 class="ContactUsH1">Contact Us</h1>
 							</div>
-							<div class="form_contact p-4">
+							<form action="https://script.google.com/macros/s/AKfycbxOYbdXMURmQVhnKlPY92-hS7B6CtZbpe8XlFHvQtLYyWD1RE4bpzAXLxA5gQi0CVlB/exec" method="POST" id="contact-Us-Form" >
 								<div class="mb-3">
-									<input type="text" class="form-control" placeholder="NAME" />
+									<input type="text" class="form-control" name="Name" placeholder="NAME" required/>
 								</div>
 
 								<div class="mb-3">
-									<input type="email" class="form-control" id="exampleFormControlInput1"
-										placeholder="EMAIL ID" />
+									<input type="email" class="form-control"  id="exampleFormControlInput1"
+									name="Email Id" placeholder="EMAIL ID" required />
 								</div>
 
 								<div class="mb-3">
-									<input type="text" class="form-control" placeholder="PHONE NUMBER" />
+									<input type="text" class="form-control" name="Phone Number" placeholder="PHONE NUMBER" required/>
 								</div>
 
 								<div class="mb-3">
 									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-										placeholder="YOUR MESSAGE"></textarea>
+									name="Message" placeholder="YOUR MESSAGE" required></textarea>
 								</div>
-								<button type="button" class="btn-success footer_form_button_Succes">Success</button>
-							</div>
+								<!-- <input type="text" name="Name">
+								<input type="text" name="Email Id">
+								<input type="text" name="Phone Number">
+								<input type="text" name="Message"> -->
+								<button type="submit" class="btn-success footer_form_button_Succes">Success</button>
+							</form>
 						</div>
 
 						<div class="col-1"></div>
@@ -1185,6 +1239,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
 		integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
 		crossorigin="anonymous"></script>
+
+
+	
+	
 
 	<!-- ------- CountDown Script ------- -->
 	<script src="./ManualScripts/1_CountDown.js"></script>
